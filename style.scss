@@ -72,6 +72,7 @@ body {
 .order-description {
     margin-bottom: 1.5em;
 }
+
 .purchase-card {
     display: flex;
     align-items: center;
@@ -93,16 +94,17 @@ body {
     align-content: center;
     justify-content: center;
 
-    h4 {
-        color: var(--Dark-blue);
-        font-weight: 700;
-    }
-
     p {
         color: var(--Desaturated-blue);
         font-weight: 500;
         font-size: 0.9em;
     }
+}
+
+.plan-title {
+    color: var(--Dark-blue);
+    font-weight: 700;
+    font-size: 1em;
 }
 
 .buttons {
@@ -145,5 +147,4 @@ body {
         margin: 0 1em;
     }
 
-  }
-
+}

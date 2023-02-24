@@ -85,14 +85,16 @@ body {
   align-content: center;
   justify-content: center;
 }
-.description h4 {
-  color: var(--Dark-blue);
-  font-weight: 700;
-}
 .description p {
   color: var(--Desaturated-blue);
   font-weight: 500;
   font-size: 0.9em;
+}
+
+.plan-title {
+  color: var(--Dark-blue);
+  font-weight: 700;
+  font-size: 1em;
 }
 
 .buttons {
