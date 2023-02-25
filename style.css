@@ -53,15 +53,14 @@ body {
   margin-bottom: 0.5em;
   font-weight: 900;
 }
-.order-content p {
+
+.order-description {
+  margin-bottom: 1.5em;
   color: var(--Desaturated-blue);
   font-size: 0.9em;
   font-weight: 500;
   padding: 0 2em;
-}
-
-.order-description {
-  margin-bottom: 1.5em;
+  line-height: 1.5em;
 }
 
 .purchase-card {
@@ -83,7 +82,9 @@ body {
   display: flex;
   flex-direction: column;
   align-content: center;
-  justify-content: center;
+  justify-content: start;
+  gap: 0.1em;
+  margin-left: 1em;
 }
 .description p {
   color: var(--Desaturated-blue);
@@ -91,10 +92,23 @@ body {
   font-size: 0.9em;
 }
 
-.plan-title {
+#plan-title {
   color: var(--Dark-blue);
-  font-weight: 700;
+  font-weight: 900;
   font-size: 1em;
+}
+
+.change-btn,
+.change-btn:visited {
+  font-weight: 700;
+  color: var(--Bright-blue);
+  transition: 0.2s;
+}
+.change-btn:hover,
+.change-btn:visited:hover {
+  opacity: 0.5;
+  transition: 0.2s;
+  text-decoration: none;
 }
 
 .buttons {
@@ -113,6 +127,7 @@ body {
   font-weight: 700;
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
   cursor: pointer;
+  transition: 0.2s;
 }
 .proceed-btn:hover {
   opacity: 0.5;
@@ -123,8 +138,13 @@ body {
   border: none;
   background-color: transparent;
   color: var(--Desaturated-blue);
-  font-weight: 700;
+  font-weight: 900;
   cursor: pointer;
+  transition: 0.2s;
+}
+.cancel-btn:hover {
+  color: var(--Dark-blue);
+  transition: 0.2s;
 }
 
 @media only screen and (max-width: 376px) {
@@ -133,5 +153,32 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     margin: 0 1em;
+  }
+  .order-content {
+    padding: 1em;
+  }
+  .order-description {
+    padding: 0 1em;
+    margin-bottom: 1em;
+  }
+  .description {
+    font-size: 0.8em;
+  }
+  #plan-title {
+    color: var(--Dark-blue);
+    font-weight: 900;
+  }
+  .change-btn {
+    font-size: 0.8em;
+  }
+  .buttons {
+    gap: 1em;
+    margin-top: 1em;
+  }
+  .purchase-card {
+    margin-bottom: 0;
+  }
+  .cancel-btn {
+    margin-bottom: 1em;
   }
 }/*# sourceMappingURL=style.css.map */
